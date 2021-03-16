@@ -47,8 +47,8 @@
         <div class="row mt-5" data-test="cards">
         {% for tour in tours %}
             <div class="col-4" data-test="card">
-                <div class="card mb-3" >
-                <img src="{{ tour.picture }}" class="card-img-top img-fluid" data-test="picture">
+                <div class="card mb-3" > <!--class="card-img-top img-fluid" data-test="picture"-->
+                <img src="{{ tour.picture }}" width="100%" height="250">
                 <div class="card-body">
                   <h5 class="card-title">{{ tour.title }}</h5>
                  <p class="card-text">{{ tour.description }}</p>
