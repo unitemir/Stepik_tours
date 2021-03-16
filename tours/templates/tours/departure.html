@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+
+      body { background-color: #2574b0; }
+
+
+    </style>
+  </head>
+  <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container mt-3">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" data-test="logo" href="http://localhost:8000/">{{ title }}</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" data-test="navigation">
+          {% for departure in departures.items %}
+            <li class="nav-item active">
+            <a class="nav-link" href="http://localhost:8000/departure/{{departure.0}}" data-test="navlink">{{ departure.1 }} </a>
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>
+
+
+    <h1 class="display-5 mt-4">Летим из <span data-test="from">{{ departure }}</span></h1>
+    <p class="mb-4" >Найдено <span data-test="tourcount">15</span> туров, от <span data-test="pricemin">26000</span> до <span data-test="pricemax">84600</span> и от <span data-test="nightsmax">4</span> ночей до <span data-test="nightsmax">15</span> ночей</p>
+    <!-- HERO -->
+
+
+
+    <!-- CARDS -->
+
+      <div class="row mt-5" data-test="cards">
+        {% for departure_info in departures_info  %}
+        <div class="col-4" data-test="card">
+            <div class="card mb-3" >
+            <img src="{{ departure_info.picture }}" class="card-img-top img-fluid" data-test="picture">
+            <div class="card-body">
+              <h5 class="card-title">{{ departure_info.title }}</h5>
+             <p class="card-text">{{ departure_info.description }}</p>
+                <a href="http://localhost:8000/tour/{{ departure_info.id }}" class="btn btn-sm btn-primary" data-test="tourlink">Подробнее</a>
+            </div>
+        </div>
+        </div>
+    {% endfor %}
+    </div>
+
+</div>
+
+</body>
+</html>
+  </body>
+</html>
