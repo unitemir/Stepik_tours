@@ -28,7 +28,7 @@
             <ul class="navbar-nav" data-test="navigation">
               {% for departure in departures.items %}
                 <li class="nav-item active">
-                <a class="nav-link" href="http://localhost:8000/departure/{{departure.0}}" data-test="navlink">{{ departure.1 }} </a>
+                <a class="nav-link" href="/departure/{{departure.0}}" data-test="navlink">{{ departure.1 }} </a>
               {% endfor %}
             </ul>
           </div>
@@ -52,7 +52,7 @@
                 <div class="card-body">
                   <h5 class="card-title">{{ tour.title }}</h5>
                  <p class="card-text">{{ tour.description }}</p>
-                    <a href="http://localhost:8000/tour/{{tour.id}}" class="btn btn-sm btn-primary" data-test="tourlink">Подробнее</a>
+                    <a href="/tour/{{tour.id}}" class="btn btn-sm btn-primary" data-test="tourlink">Подробнее</a>
                 </div>
             </div>
         </div>
