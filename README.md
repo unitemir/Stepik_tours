@@ -1,5 +1,5 @@
 # Stepik_tours
-<h3>Мой первый проект на Django - Поиск путевок</h3>
+<h3><a href="https://stepik-tours-temir-pj.herokuapp.com/">Мой первый проект</a> на Django - Поиск путевок</h3>
 <hr>
 <h3>О проекте: </h3>
 <hr>
@@ -11,5 +11,4 @@
 <h4>Туры:</h4>
 <img src="https://i.postimg.cc/1td6VzKQ/tur.png" width="400" height="350" alt="туры">
 <p>Туры прописаны внутри проекта.
-
-
+<h2></h2>
