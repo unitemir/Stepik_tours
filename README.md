@@ -1,5 +1,5 @@
 # Stepik_tours
-<h3><a href="https://stepik-tours-temir-pj.herokuapp.com/">Мой первый проект</a> на Django - Поиск путевок</h3>
+<h3><a href="https://stepik-tours-temir-pj.herokuapp.com/" target="_blank">Мой первый проект</a> на Django - Поиск путевок</h3>
 <hr>
 <h3>О проекте: </h3>
 <hr>
