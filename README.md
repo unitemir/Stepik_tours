@@ -1,5 +1,5 @@
 # Stepik_tours
-<p>My first project in django 
-<p>Travel site
-<p>The easiest project is a tour search engine
-<p>3 screens: main, direction, tour
+<p>Мой первый проект на Django
+<p>Поиск путевок
+<p>3 страницы: главная, направление, туры
+<p>Туры прописаны внутри проекта.
